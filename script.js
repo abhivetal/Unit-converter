@@ -13,13 +13,16 @@ const lengthEl = document.getElementById("length-el");
 const volumeEl = document.getElementById("volume-el");
 const massEl = document.getElementById("mass-el");
 
+//working with localStorage (This can be done with the help value attribute)
+// localStorage.setItem("initialValue", "20");
+// inputEl.value = localStorage.getItem("initialValue");
+
 buttonEl.addEventListener("click", function() {
     const inputValue = inputEl.value;
     length(inputValue);
     volume(inputValue);
     mass(inputValue);
 });
-
 
 function length(inputValue) {
     const feet = inputValue * 3.281;
