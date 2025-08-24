@@ -64,6 +64,11 @@ button {
     padding: 15px 40px;
 }
 
+button:hover, button:active {
+    transform: scale(1.05);
+    transition: 0.2s ease-in;
+}
+
 .second-container {
     color: #5A537B;
     background-color: #F4F4F4;
